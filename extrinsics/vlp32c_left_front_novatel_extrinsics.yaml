@@ -1,0 +1,17 @@
+header:
+  seq: 0
+  stamp:
+    secs: 1562725154
+    nsecs: 0
+  frame_id: novatel
+child_frame_id: left_front_frame
+transform:
+  rotation:
+    x: -0.007036554422412742
+    y: 0.003341027960165861
+    z: 0.9998776808058047
+    w: 0.01356273794022221
+  translation:
+    x: -0.8239624018706491
+    y: 2.858929832742698
+    z: 1.15

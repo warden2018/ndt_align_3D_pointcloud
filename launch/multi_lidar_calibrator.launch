@@ -1,0 +1,34 @@
+<launch>
+    <arg name="points_parent_src" default="/left_front_pointcloud" />
+    <arg name="points_child_src" default="/right_front_pointcloud" />
+    <arg name="voxel_size" default="0.7" />
+    <arg name="ndt_epsilon" default="0.01" />
+    <arg name="ndt_step_size" default="0.1" />
+    <arg name="ndt_resolution" default="1.0" />
+    <arg name="ndt_iterations" default="50" />
+    <arg name="init_param_file" default="$(find multi_lidar_calibrator)/extrinsics/vlp32c_right_front_left_front_extrinsics.yaml" />
+    <arg name="x" default="-1.92" />
+    <arg name="y" default="0" />
+    <arg name="z" default="0" />
+    <arg name="roll" default="0" />
+    <arg name="pitch" default="0" />
+    <arg name="yaw" default="0" />
+
+    <node pkg="multi_lidar_calibrator" type="multi_lidar_calibrator" name="lidar_calibrator" output="screen">
+        <param name="points_parent_src" value="$(arg points_parent_src)" />
+        <param name="points_child_src" value="$(arg points_child_src)" />
+        <param name="voxel_size" value="$(arg voxel_size)" />
+        <param name="ndt_epsilon" value="$(arg ndt_epsilon)" />
+        <param name="ndt_step_size" value="$(arg ndt_step_size)" />
+        <param name="ndt_resolution" value="$(arg ndt_resolution)" />
+        <param name="ndt_iterations" value="$(arg ndt_iterations)" />
+        <param name="init_param_file" value="$(arg init_param_file)" />
+        <param name="x" value="$(arg x)" />
+        <param name="y" value="$(arg y)" />
+        <param name="z" value="$(arg z)" />
+        <param name="roll" value="$(arg roll)" />
+        <param name="pitch" value="$(arg pitch)" />
+        <param name="yaw" value="$(arg yaw)" />
+    </node>
+
+</launch>

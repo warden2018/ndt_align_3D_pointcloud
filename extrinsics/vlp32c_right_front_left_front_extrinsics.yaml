@@ -1,0 +1,25 @@
+# proj: +proj=utm +zone=50 +ellps=WGS84
+# scale:1.11177
+# (XXX) Manually adjusted
+header:
+  stamp:
+    secs: 1422601952
+    nsecs: 288805456
+  seq: 0
+  frame_id: left_front_frame
+transform:
+  translation:
+    x: -2.07163869037715
+    y: -0.094714853030086532
+    z: -0.022783951833868828
+  rotation:
+    w: 0.0442736917105
+    x: 0.00224897436356
+    y: -0.005560707566351
+    z: -0.999001431865
+  #rotation:
+  #  w: 0.932184
+  #  x: -0.0507226
+  #  y: -0.0122461
+  #  z: -0.358204
+child_frame_id: right_front_frame

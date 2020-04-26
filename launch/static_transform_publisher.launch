@@ -1,0 +1,11 @@
+
+<launch>
+  <node pkg="tf" type="static_transform_publisher" name="multi_lidar_calibrator_right_front" 
+  args="-1.6428146972554616 
+      4.21148055034747 
+      -0.7016926419586732 
+      -0.00394097173515
+      0.00512003114677
+      -0.999325241185 
+      0.997144958167 left_front_frame right_front_frame 100" />
+</launch>
